@@ -39,9 +39,6 @@ btn.map((button) => {
                 }
             }
         }
-        console.log('val : ' + val +
-                    '\nlast : ' + last +
-                    '\noperator : ' + operator);
         if (val > 9999999999999999) val = 9999999999999999;
         input.textContent = val;
     });
@@ -69,7 +66,6 @@ function operate(a, b, op) {
 }
 
 function error() {
-    console.log('ERROR');
     val = 0;
     last = 0;
     operator = '';
